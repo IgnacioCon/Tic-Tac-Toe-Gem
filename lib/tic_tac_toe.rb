@@ -137,8 +137,8 @@ class TicTacToe
             if play_again == "y"
                 clean_board
                 @turns_taken = 0
-                @current_player = @current_player == "X" ? "O" : "X"
                 puts "Since it was a Draw, Player #{@current_player} will begin to move this round."
+                print_board
                 play
             else
                 puts "Thank you for playing!"
